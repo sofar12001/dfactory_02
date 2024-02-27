@@ -1,0 +1,66 @@
+{
+	"name": "logdata_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake245688_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Log.parquet",
+				"fileSystem": "prquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Correlationid",
+				"type": "UTF8"
+			},
+			{
+				"name": "Operationname",
+				"type": "UTF8"
+			},
+			{
+				"name": "Status",
+				"type": "UTF8"
+			},
+			{
+				"name": "Eventcategory",
+				"type": "UTF8"
+			},
+			{
+				"name": "Level",
+				"type": "UTF8"
+			},
+			{
+				"name": "Time",
+				"type": "UTF8"
+			},
+			{
+				"name": "Subscription",
+				"type": "UTF8"
+			},
+			{
+				"name": "Eventinitiatedby",
+				"type": "UTF8"
+			},
+			{
+				"name": "Resourcetype",
+				"type": "UTF8"
+			},
+			{
+				"name": "Resourcegroup",
+				"type": "UTF8"
+			},
+			{
+				"name": "Resource",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

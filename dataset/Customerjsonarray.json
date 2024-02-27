@@ -1,0 +1,51 @@
+{
+	"name": "Customerjsonarray",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake245688_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customer.json",
+				"folderPath": "Customer",
+				"fileSystem": "json"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"customerid": {
+					"type": "integer"
+				},
+				"customername": {
+					"type": "string"
+				},
+				"registered": {
+					"type": "boolean"
+				},
+				"courses": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"details": {
+					"type": "object",
+					"properties": {
+						"mobile": {
+							"type": "string"
+						},
+						"city": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

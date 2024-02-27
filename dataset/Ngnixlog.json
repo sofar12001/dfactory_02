@@ -1,0 +1,17 @@
+{
+	"name": "Ngnixlog",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "appvmserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

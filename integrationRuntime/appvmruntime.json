@@ -1,0 +1,6 @@
+{
+	"name": "appvmruntime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

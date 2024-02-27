@@ -1,0 +1,18 @@
+{
+	"name": "FileBinary",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake245688_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "nginx"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

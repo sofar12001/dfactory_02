@@ -1,0 +1,19 @@
+{
+	"name": "logdatajson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake245688_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
